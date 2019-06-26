@@ -13,5 +13,7 @@ public class Main {
         position = new Position(1, 1);
         GameBoard gameBoard = new GameBoard(position);
 
+        System.out.println("Test-workspace skit");
+
     }
 }
