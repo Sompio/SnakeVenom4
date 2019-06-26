@@ -10,6 +10,7 @@ public class Main {
         Position position;
         System.out.println("test");
         System.out.println("PerreTest");
+        System.out.println("Golfarn testar woohoo");
         position = new Position(1, 1);
         GameBoard gameBoard = new GameBoard(position);
 
