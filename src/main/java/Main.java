@@ -1,3 +1,5 @@
+import GUI.GameBoard;
+import GUI.Position;
 import com.googlecode.lanterna.terminal.DefaultTerminalFactory;
 import com.googlecode.lanterna.terminal.Terminal;
 
@@ -5,15 +7,11 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) {
+        Position position;
         System.out.println("test");
-        System.out.println("testtesttest20190626");
-        try {
-            DefaultTerminalFactory dtf = new DefaultTerminalFactory();
-            Terminal terminal = dtf.createTerminal();
-
-        }catch (IOException e ) {
-            e.printStackTrace();
-        }
+        System.out.println("PerreTest");
+        position = new Position(1, 1);
+        GameBoard gameBoard = new GameBoard(position);
 
     }
 }
