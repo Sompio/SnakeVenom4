@@ -11,6 +11,7 @@ public class GameBoard {
     Terminal terminal;
     private char block = '\u2588';
     Position position;
+    ArrayList<Position> testare = new ArrayList<Position>();
 
 
     public GameBoard(Position position){
@@ -20,13 +21,13 @@ public class GameBoard {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
+drawBoard(terminal,testare);
     }
 
 
     public void drawBoard(Terminal terminal, ArrayList<Position> immovablePositionList) {
         try {
-            for (int i = 3; i < 77; i++) {
+            for (int i = 3; i < 78; i++) {
                 terminal.setCursorPosition(i, 3);
                 terminal.putCharacter(block);
                 position = new Position(i, 3);
