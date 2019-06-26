@@ -29,15 +29,15 @@ public class GameBoard {
 
     public void drawBoard(Terminal terminal, ArrayList<Position> immovablePositionList) {
         try {
-            for (int i = 3; i < 77; i++) {
-                terminal.setCursorPosition(i, 3);
+            for (int i = 4; i < 77; i++) {
+                terminal.setCursorPosition(i, 4);
                 terminal.putCharacter(block);
-                position = new Position(i, 3);
+                position = new Position(i, 4);
                 position.setMovable(false);
-                immovablePositionList.add(new Position(i, 3));
+                immovablePositionList.add(new Position(i, 4));
             }
 
-            for (int i = 3; i < 77; i++) {
+            for (int i = 4; i < 77; i++) {
                 terminal.setCursorPosition(i, 20);
                 terminal.putCharacter(block);
                 position = new Position(i, 20);
