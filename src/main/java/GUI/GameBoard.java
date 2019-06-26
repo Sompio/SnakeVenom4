@@ -11,9 +11,11 @@ public class GameBoard {
     Terminal terminal;
     private char block = '\u2588';
     Position position;
+    ArrayList<Position> immovablePositionList;
 
 
     public GameBoard(Position position){
+        immovablePositionList = new ArrayList<Position>();
         try {
             dtf = new DefaultTerminalFactory();
             terminal = dtf.createTerminal();
@@ -21,6 +23,7 @@ public class GameBoard {
             e.printStackTrace();
         }
 
+        drawBoard(terminal, immovablePositionList);
     }
 
 
