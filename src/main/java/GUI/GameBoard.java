@@ -29,7 +29,7 @@ public class GameBoard {
 
     public void drawBoard(Terminal terminal, ArrayList<Position> immovablePositionList) {
         try {
-            for (int i = 3; i < 77; i++) {
+            for (int i = 3; i < 78; i++) {
                 terminal.setCursorPosition(i, 3);
                 terminal.putCharacter(block);
                 position = new Position(i, 3);
