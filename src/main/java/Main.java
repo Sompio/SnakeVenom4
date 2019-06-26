@@ -11,7 +11,12 @@ public class Main {
         System.out.println("test");
         System.out.println("PerreTest");
         position = new Position(1, 1);
+        try {
         GameBoard gameBoard = new GameBoard(position);
+        } catch (java.lang.Exception e) {
+            e.printStackTrace();
+        }
+
 
     }
 }
